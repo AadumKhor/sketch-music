@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
       height: MediaQuery.of(context).size.height,
       padding: EdgeInsets.all(4.0),
       alignment: Alignment.topLeft,
-      color: Colors.blueGrey,
+      color: Colors.yellow[100],
       child: CustomPaint(
         painter: Sketcher(points),
       ),
@@ -94,7 +94,7 @@ class Sketcher extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     //properties of the paint used to draw
     Paint paint = new Paint()
-      ..color = Colors.black
+      ..color = Colors.blue
       ..strokeCap = StrokeCap.round
       ..strokeWidth = 4.0;
 
